@@ -4,7 +4,7 @@ let id = 5;
 let company = "Traversy Media";
 let isPublished = true;
 let x = "Hello";
-// Doesn't show errors with a reassignment of type
+// Can assign value of different type
 x = true;
 // Arrays
 let ids = [6, 5, 8, 4, 5];
@@ -51,3 +51,7 @@ const user = {
     id: 1,
     name: "Bob",
 };
+// Type Assertion - Assert different type to variable
+let cid = 1;
+// let customerId = <number>cid; // first way
+let customerId = cid; // second way

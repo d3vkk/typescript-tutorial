@@ -3,7 +3,7 @@ let id: number = 5;
 let company: string = "Traversy Media";
 let isPublished: boolean = true;
 let x: any = "Hello";
-// Doesn't show errors with a reassignment of type
+// Can assign value of different type
 x = true;
 
 // Arrays
@@ -64,3 +64,8 @@ const user: User = {
   id: 1,
   name: "Bob",
 };
+
+// Type Assertion - Assert different type to variable
+let cid: any = 1;
+// let customerId = <number>cid; // first way
+let customerId = cid as number; // second way
