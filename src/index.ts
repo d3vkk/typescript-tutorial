@@ -1,5 +1,7 @@
+// Basic Types
 let id: number = 5;
-
-console.log("id", id);
-
-// id = '5'
+let company: string = "Traversy Media";
+let isPublished: boolean = true;
+let x: any = "Hello";
+// Doesn't show errors with a reassignment of type
+x = true;
