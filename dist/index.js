@@ -51,6 +51,7 @@ const user = {
     id: 1,
     name: "Bob",
 };
+const p1 = 1;
 // Type Assertion - Assert different type to variable
 let cid = 1;
 // let customerId = <number>cid; // first way
@@ -63,3 +64,7 @@ function addNum(x, y) {
 function log(message) {
     console.log(message);
 }
+const user1 = {
+    id: 1,
+    name: "Bob",
+};

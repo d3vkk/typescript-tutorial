@@ -54,7 +54,8 @@ const cars: {
   plate: "FGH324J",
 };
 
-// More legibility
+// More legibility with type
+// Types are mostly used with objects
 type User = {
   id: number;
   name: string;
@@ -64,6 +65,10 @@ const user: User = {
   id: 1,
   name: "Bob",
 };
+
+// Types can be used with primitives and unions unlike Interfaces
+type Point = number | string;
+const p1: Point = 1;
 
 // Type Assertion - Assert different type to variable
 let cid: any = 1;
@@ -79,3 +84,16 @@ function addNum(x: number, y: number): number {
 function log(message: string | number): void {
   console.log(message);
 }
+
+// Interfaces
+interface UserInterface {
+  readonly id: number; // readonly behaves like a constant after first value assignment
+  name: string;
+  age?: number; // ? - makes it optional
+}
+
+const user1: UserInterface = {
+  id: 1,
+  name: "Bob",
+};
+
