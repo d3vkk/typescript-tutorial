@@ -41,3 +41,13 @@ var Direction3;
     Direction3["Left"] = "Left";
     Direction3["Right"] = "Right";
 })(Direction3 || (Direction3 = {}));
+// Objects
+// Less legibility
+const cars = {
+    quantity: 11,
+    plate: "FGH324J",
+};
+const user = {
+    id: 1,
+    name: "Bob",
+};

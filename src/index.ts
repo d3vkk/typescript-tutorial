@@ -43,3 +43,24 @@ enum Direction3 {
   Left = "Left",
   Right = "Right",
 }
+
+// Objects
+// Less legibility
+const cars: {
+  quantity: number;
+  plate: string;
+} = {
+  quantity: 11,
+  plate: "FGH324J",
+};
+
+// More legibility
+type User = {
+  id: number;
+  name: string;
+};
+
+const user: User = {
+  id: 1,
+  name: "Bob",
+};
