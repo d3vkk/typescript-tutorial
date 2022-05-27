@@ -10,7 +10,7 @@ x = true;
 let ids: number[] = [6, 5, 8, 4, 5];
 let arr: any[] = [5, true, "Bye World"];
 
-// Tuples - specify multiple types in a specific order
+// Tuples - specifies multiple types in a specific order
 let person: [number, string, boolean] = [9, "Country", false];
 // Tuple Array
 let employee: [number, string][] = [
@@ -18,3 +18,28 @@ let employee: [number, string][] = [
   [2, "Sarah"],
   [3, "Connor"],
 ];
+
+// Union - stores either, or type of a value
+let pid: string | number = 22;
+
+// Enum - short for enumerated types. Holds a set of constant values
+enum Direction1 {
+  Up, // 0
+  Down, // 1
+  Left, // 2
+  Right, // 3
+}
+
+enum Direction2 {
+  Up = 1, // automatically updates the rest of the values
+  Down, // 2
+  Left, // 3
+  Right, // 4
+}
+
+enum Direction3 {
+  Up = "Up",
+  Down = "Down",
+  Left = "Left",
+  Right = "Right",
+}
