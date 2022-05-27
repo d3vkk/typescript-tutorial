@@ -97,3 +97,12 @@ const user1: UserInterface = {
   name: "Bob",
 };
 
+// Function Interfaces - ensures parameters, parameter types and return type stays constant
+interface MathFunc {
+  (x: number, y: number): number;
+}
+
+const add: MathFunc = (x: number, y: number): number => x + y;
+const subtract: MathFunc = (x: number, y: number): number => x - y;
+const multiply: MathFunc = (x: number, y: number): number => x * y;
+const divide: MathFunc = (x: number, y: number): number => x / y;
