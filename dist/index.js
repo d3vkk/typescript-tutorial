@@ -55,3 +55,11 @@ const user = {
 let cid = 1;
 // let customerId = <number>cid; // first way
 let customerId = cid; // second way
+// Functions
+function addNum(x, y) {
+    return x + y;
+}
+// Void functions
+function log(message) {
+    console.log(message);
+}

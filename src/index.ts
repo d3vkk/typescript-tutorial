@@ -69,3 +69,13 @@ const user: User = {
 let cid: any = 1;
 // let customerId = <number>cid; // first way
 let customerId = cid as number; // second way
+
+// Functions
+function addNum(x: number, y: number): number {
+  return x + y;
+}
+
+// Void functions
+function log(message: string | number): void {
+  console.log(message);
+}
