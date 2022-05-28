@@ -82,7 +82,7 @@ class Person {
         this.age = age;
     }
     register() {
-        return `${this.name} is now registered`;
+        return `Id ${this.id} is now registered`;
     }
 }
 const john = new Person(1, "John Mauja", 78);

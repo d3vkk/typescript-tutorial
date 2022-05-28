@@ -107,8 +107,14 @@ const subtract: MathFunc = (x: number, y: number): number => x - y;
 const multiply: MathFunc = (x: number, y: number): number => x * y;
 const divide: MathFunc = (x: number, y: number): number => x / y;
 
+// Implement Interface in Class. Useful for Abstraction
+interface PersonInterface {
+  id: number;
+  register(): string;
+}
+
 // Classes
-class Person {
+class Person implements PersonInterface {
   id: number; // public by default. Accessible outside class
   protected name: string; // only accessible within the class or subclass
   private age: number; // only accessible within the class
@@ -122,7 +128,7 @@ class Person {
   }
 
   register() {
-    return `${this.name} is now registered`;
+    return `Id ${this.id} is now registered`;
   }
 }
 
