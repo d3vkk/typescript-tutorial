@@ -106,3 +106,26 @@ const add: MathFunc = (x: number, y: number): number => x + y;
 const subtract: MathFunc = (x: number, y: number): number => x - y;
 const multiply: MathFunc = (x: number, y: number): number => x * y;
 const divide: MathFunc = (x: number, y: number): number => x / y;
+
+// Classes
+class Person {
+  id: number; // public by default. Accessible outside class
+  protected name: string; // only accessible within the class or subclass
+  private age: number; // only accessible within the class
+
+  // Initializes properties of class
+  constructor(id: number, name: string, age: number) {
+    // getters
+    this.id = id;
+    this.name = name;
+    this.age = age;
+  }
+
+  register() {
+    return `${this.name} is now registered`;
+  }
+}
+
+const john = new Person(1, "John Mauja", 78);
+const sarah = new Person(1, "Sarah Smith", 13);
+john.register();

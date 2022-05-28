@@ -72,3 +72,19 @@ const add = (x, y) => x + y;
 const subtract = (x, y) => x - y;
 const multiply = (x, y) => x * y;
 const divide = (x, y) => x / y;
+// Classes
+class Person {
+    // Initializes properties of class
+    constructor(id, name, age) {
+        // getters
+        this.id = id;
+        this.name = name;
+        this.age = age;
+    }
+    register() {
+        return `${this.name} is now registered`;
+    }
+}
+const john = new Person(1, "John Mauja", 78);
+const sarah = new Person(1, "Sarah Smith", 13);
+john.register();
