@@ -147,3 +147,12 @@ class Employee extends Person {
 }
 
 const frank = new Employee(3, "Frank Jager", 45, "manager");
+
+// Generics - Allows us to customise types in a function
+// Hence provides a way to create reusable functions
+function getArray<T>(items: T[]): T[] {
+  return new Array().concat(items);
+}
+
+let numArray = getArray<number>([1, 2, 3, 4]);
+let strArray = getArray<string>(["a", "b", "c", "d"]);
