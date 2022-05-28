@@ -133,5 +133,17 @@ class Person implements PersonInterface {
 }
 
 const john = new Person(1, "John Mauja", 78);
-const sarah = new Person(1, "Sarah Smith", 13);
+const sarah = new Person(2, "Sarah Smith", 13);
 john.register();
+
+// Extending a Class with Subclass
+class Employee extends Person {
+  position: string;
+
+  constructor(id: number, name: string, age: number, position: string) {
+    super(id, name, age); // references super class properties and constructor
+    this.position = position;
+  }
+}
+
+const frank = new Employee(3, "Frank Jager", 45, "manager");
